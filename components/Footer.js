@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
@@ -25,19 +27,19 @@ export default function Footer() {
             </p>
             <ul className="space-y-2">
               {[
-                { label: "Leistungen", href: "#leistungen" },
-                { label: "So funktioniert es", href: "#prozess" },
-                { label: "Warum ajents", href: "#warum-ajents" },
-                { label: "Über uns", href: "#ueber-uns" },
-                { label: "Kontakt", href: "#kontakt" },
+                { label: "Leistungen", href: "/#leistungen" },
+                { label: "So funktioniert es", href: "/#prozess" },
+                { label: "Warum ajents", href: "/#warum-ajents" },
+                { label: "Über uns", href: "/#ueber-uns" },
+                { label: "Kontakt", href: "/#kontakt" },
               ].map((link) => (
                 <li key={link.href}>
-                  <a
+                  <Link
                     href={link.href}
                     className="text-xs text-ajents-gray hover:text-ajents-text transition-colors"
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -50,20 +52,20 @@ export default function Footer() {
             </p>
             <ul className="space-y-2">
               <li>
-                <a
+                <Link
                   href="/impressum"
                   className="text-xs text-ajents-gray hover:text-ajents-text transition-colors"
                 >
                   Impressum
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/datenschutz"
                   className="text-xs text-ajents-gray hover:text-ajents-text transition-colors"
                 >
                   Datenschutz
-                </a>
+                </Link>
               </li>
             </ul>
 

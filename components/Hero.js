@@ -21,10 +21,10 @@ export default function Hero() {
 
         {/* CTA */}
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
-          <a href="#kontakt" className="btn-primary">
+          <a href="/#kontakt" className="btn-primary">
             Erstgespräch anfragen
           </a>
-          <a href="#leistungen" className="btn-secondary">
+          <a href="/#leistungen" className="btn-secondary">
             Mehr erfahren
           </a>
         </div>
