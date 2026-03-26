@@ -5,6 +5,9 @@ export const metadata = {
   description:
     "ajents hilft kleinen und mittleren Unternehmen, ihre Werbung auf Meta, Google und TikTok mit KI besser zu analysieren und zu steuern.",
   metadataBase: new URL("https://ajents.de"),
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({ children }) {

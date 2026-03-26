@@ -43,7 +43,7 @@ export default function WhyAjents() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {reasons.map((reason) => (
             <div key={reason.title} className="flex gap-4">
-              <span className="mt-0.5 flex-shrink-0 w-1 h-full bg-ajents-blue rounded-full opacity-30" />
+              <span className="flex-shrink-0 w-1 self-stretch bg-ajents-blue rounded-full opacity-30" />
               <div>
                 <h3 className="text-sm font-semibold text-ajents-text mb-1.5">
                   {reason.title}

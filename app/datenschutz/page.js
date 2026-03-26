@@ -15,52 +15,88 @@ export default function Datenschutz() {
             Datenschutzerklärung
           </h1>
 
-          {/* HINWEIS: Diese Seite muss mit einer vollständigen, DSGVO-konformen
-              Datenschutzerklärung befüllt werden. Empfehlung: Generator nutzen,
-              z. B. von der Kanzlei Schwenke (datenschutz-generator.de) oder
-              einen Anwalt beauftragen. */}
-
           <div className="space-y-6 text-sm text-ajents-gray leading-relaxed">
             <div>
               <h2 className="text-sm font-semibold text-ajents-text mb-2">
-                1. Datenschutz auf einen Blick
-              </h2>
-              <p>
-                [Platzhalter – hier eine vollständige DSGVO-konforme
-                Datenschutzerklärung einfügen. Dazu gehören Angaben zu
-                Verantwortlichem, Datenerhebung, Hosting, Kontaktformular,
-                Cookies, Betroffenenrechten und Widerspruchsmöglichkeiten.]
-              </p>
-            </div>
-
-            <div>
-              <h2 className="text-sm font-semibold text-ajents-text mb-2">
-                2. Verantwortlicher
+                1. Verantwortlicher
               </h2>
               <p>
                 ajents<br />
                 Jannis Schröder, Jonas Rennkamp<br />
-                [Adresse ergänzen]<br />
-                E-Mail: info@ajents.de
+                E-Mail:{" "}
+                <a href="mailto:info@ajents.de" className="text-ajents-blue hover:underline">
+                  info@ajents.de
+                </a>
               </p>
             </div>
 
             <div>
               <h2 className="text-sm font-semibold text-ajents-text mb-2">
-                3. Ihre Rechte
+                2. Erhebung und Verarbeitung personenbezogener Daten
               </h2>
               <p>
-                [Platzhalter – Auskunft, Berichtigung, Löschung, Widerspruch,
-                Beschwerde bei Aufsichtsbehörde gemäß DSGVO ergänzen.]
+                Wir erheben personenbezogene Daten nur, soweit dies zur Bereitstellung
+                unseres Angebots und zur Beantwortung von Anfragen erforderlich ist.
+                Beim Besuch dieser Website werden durch den Hosting-Anbieter technisch
+                notwendige Zugriffsdaten (Server-Logs) gespeichert. Diese enthalten
+                u. a. IP-Adresse, Datum und Uhrzeit des Zugriffs sowie die aufgerufene
+                Seite. Die Verarbeitung erfolgt auf Basis von Art. 6 Abs. 1 lit. f DSGVO
+                (berechtigtes Interesse an einer sicheren und stabilen Website).
               </p>
             </div>
 
-            <div className="pt-4 border-t border-gray-100">
-              <p className="text-xs text-ajents-gray italic">
-                Hinweis: Dies ist ein Platzhalter. Vor Veröffentlichung der Website
-                muss hier eine vollständige, DSGVO-konforme Datenschutzerklärung stehen.
-                Empfehlung: einen Anwalt für Datenschutzrecht beauftragen oder einen
-                seriösen Generator verwenden.
+            <div>
+              <h2 className="text-sm font-semibold text-ajents-text mb-2">
+                3. Kontaktformular
+              </h2>
+              <p>
+                Wenn Sie uns über das Kontaktformular oder per E-Mail eine Nachricht
+                schicken, werden die von Ihnen angegebenen Daten (Name, E-Mail-Adresse,
+                Nachricht) ausschließlich zur Bearbeitung Ihrer Anfrage verwendet. Die
+                Daten werden nicht an Dritte weitergegeben. Rechtsgrundlage ist
+                Art. 6 Abs. 1 lit. b DSGVO (Vertragsanbahnung) bzw. Art. 6 Abs. 1
+                lit. f DSGVO (berechtigtes Interesse).
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-sm font-semibold text-ajents-text mb-2">
+                4. Ihre Rechte
+              </h2>
+              <p>
+                Sie haben das Recht auf Auskunft über die zu Ihrer Person gespeicherten
+                Daten (Art. 15 DSGVO), auf Berichtigung (Art. 16 DSGVO), auf Löschung
+                (Art. 17 DSGVO) sowie auf Einschränkung der Verarbeitung (Art. 18 DSGVO).
+                Zudem steht Ihnen ein Widerspruchsrecht gemäß Art. 21 DSGVO zu.
+                Bei Beschwerden können Sie sich an die zuständige Datenschutzaufsichtsbehörde
+                wenden.
+              </p>
+              <p className="mt-3">
+                Für Anfragen zu Ihren Datenschutzrechten wenden Sie sich bitte an:{" "}
+                <a href="mailto:info@ajents.de" className="text-ajents-blue hover:underline">
+                  info@ajents.de
+                </a>
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-sm font-semibold text-ajents-text mb-2">
+                5. Cookies
+              </h2>
+              <p>
+                Diese Website verwendet keine Tracking-Cookies oder Cookies von
+                Drittanbietern. Technisch notwendige Cookies können durch den
+                Hosting-Anbieter gesetzt werden.
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-sm font-semibold text-ajents-text mb-2">
+                6. Aktualität dieser Erklärung
+              </h2>
+              <p>
+                Diese Datenschutzerklärung ist aktuell gültig und hat den Stand März 2026.
+                Mit Weiterentwicklung der Website kann eine Anpassung notwendig werden.
               </p>
             </div>
           </div>

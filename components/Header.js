@@ -46,7 +46,7 @@ export default function Header() {
 
           {/* Mobile Menu Toggle */}
           <button
-            className="md:hidden p-2 text-ajents-gray hover:text-ajents-text"
+            className="md:hidden p-3 -mr-1 text-ajents-gray hover:text-ajents-text"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Menü öffnen"
           >
@@ -72,7 +72,7 @@ export default function Header() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setMenuOpen(false)}
-                className="py-2 text-sm text-ajents-gray hover:text-ajents-text transition-colors"
+                className="py-3 min-h-[44px] flex items-center text-sm text-ajents-gray hover:text-ajents-text transition-colors"
               >
                 {link.label}
               </a>

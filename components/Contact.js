@@ -88,7 +88,7 @@ export default function Contact() {
                       value={formData.name}
                       onChange={handleChange}
                       placeholder="Ihr Name"
-                      className="w-full border border-gray-200 rounded-md px-3 py-2.5 text-sm text-ajents-text placeholder-gray-300
+                      className="w-full border border-gray-200 rounded-md px-3 py-2.5 text-base text-ajents-text placeholder-gray-300
                         focus:outline-none focus:border-ajents-blue transition-colors"
                     />
                   </div>
@@ -103,7 +103,7 @@ export default function Contact() {
                       value={formData.company}
                       onChange={handleChange}
                       placeholder="Ihr Unternehmen"
-                      className="w-full border border-gray-200 rounded-md px-3 py-2.5 text-sm text-ajents-text placeholder-gray-300
+                      className="w-full border border-gray-200 rounded-md px-3 py-2.5 text-base text-ajents-text placeholder-gray-300
                         focus:outline-none focus:border-ajents-blue transition-colors"
                     />
                   </div>
@@ -121,7 +121,7 @@ export default function Contact() {
                     value={formData.email}
                     onChange={handleChange}
                     placeholder="ihre@email.de"
-                    className="w-full border border-gray-200 rounded-md px-3 py-2.5 text-sm text-ajents-text placeholder-gray-300
+                    className="w-full border border-gray-200 rounded-md px-3 py-2.5 text-base text-ajents-text placeholder-gray-300
                       focus:outline-none focus:border-ajents-blue transition-colors"
                   />
                 </div>
@@ -138,7 +138,7 @@ export default function Contact() {
                     value={formData.message}
                     onChange={handleChange}
                     placeholder="Was möchten Sie auswerten oder optimieren? Kurze Beschreibung hilft uns, uns vorzubereiten."
-                    className="w-full border border-gray-200 rounded-md px-3 py-2.5 text-sm text-ajents-text placeholder-gray-300
+                    className="w-full border border-gray-200 rounded-md px-3 py-2.5 text-base text-ajents-text placeholder-gray-300
                       focus:outline-none focus:border-ajents-blue transition-colors resize-none"
                   />
                 </div>
