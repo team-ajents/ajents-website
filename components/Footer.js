@@ -14,8 +14,8 @@ export default function Footer() {
               KI-gestützte Analyse von Werbekampagnen auf Meta, Google und TikTok.
             </p>
             <p className="text-xs text-ajents-gray mt-3">
-              <a href="mailto:info@ajents.de" className="hover:text-ajents-text transition-colors">
-                info@ajents.de
+              <a href="mailto:team@ajents.de" className="hover:text-ajents-text transition-colors">
+                team@ajents.de
               </a>
             </p>
           </div>

@@ -24,8 +24,8 @@ export default function Datenschutz() {
                 ajents<br />
                 Jannis Schröder, Jonas Rennkamp<br />
                 E-Mail:{" "}
-                <a href="mailto:info@ajents.de" className="text-ajents-blue hover:underline">
-                  info@ajents.de
+                <a href="mailto:team@ajents.de" className="text-ajents-blue hover:underline">
+                  team@ajents.de
                 </a>
               </p>
             </div>
@@ -73,8 +73,8 @@ export default function Datenschutz() {
               </p>
               <p className="mt-3">
                 Für Anfragen zu Ihren Datenschutzrechten wenden Sie sich bitte an:{" "}
-                <a href="mailto:info@ajents.de" className="text-ajents-blue hover:underline">
-                  info@ajents.de
+                <a href="mailto:team@ajents.de" className="text-ajents-blue hover:underline">
+                  team@ajents.de
                 </a>
               </p>
             </div>

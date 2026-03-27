@@ -18,7 +18,7 @@ export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Placeholder: hier kann ein API-Aufruf oder ein Mailto-Link eingebaut werden
-    const mailto = `mailto:info@ajents.de?subject=Anfrage von ${encodeURIComponent(formData.name)} – ${encodeURIComponent(formData.company)}&body=${encodeURIComponent(
+    const mailto = `mailto:team@ajents.de?subject=Anfrage von ${encodeURIComponent(formData.name)} – ${encodeURIComponent(formData.company)}&body=${encodeURIComponent(
       `Name: ${formData.name}\nUnternehmen: ${formData.company}\nE-Mail: ${formData.email}\n\nNachricht:\n${formData.message}`
     )}`;
     window.location.href = mailto;
@@ -48,8 +48,8 @@ export default function Contact() {
                 <svg className="w-4 h-4 text-ajents-blue flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
-                <a href="mailto:info@ajents.de" className="hover:text-ajents-text transition-colors">
-                  info@ajents.de
+                <a href="mailto:team@ajents.de" className="hover:text-ajents-text transition-colors">
+                  team@ajents.de
                 </a>
               </div>
               <div className="flex items-center gap-3 text-sm text-ajents-gray">

@@ -35,8 +35,8 @@ export default function Impressum() {
               <h2 className="text-sm font-semibold text-ajents-text mb-2">Kontakt</h2>
               <p>
                 E-Mail:{" "}
-                <a href="mailto:info@ajents.de" className="text-ajents-blue hover:underline">
-                  info@ajents.de
+                <a href="mailto:team@ajents.de" className="text-ajents-blue hover:underline">
+                  team@ajents.de
                 </a>
               </p>
             </div>
