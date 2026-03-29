@@ -17,7 +17,6 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Placeholder: hier kann ein API-Aufruf oder ein Mailto-Link eingebaut werden
     const mailto = `mailto:team@ajents.de?subject=Anfrage von ${encodeURIComponent(formData.name)} – ${encodeURIComponent(formData.company)}&body=${encodeURIComponent(
       `Name: ${formData.name}\nUnternehmen: ${formData.company}\nE-Mail: ${formData.email}\n\nNachricht:\n${formData.message}`
     )}`;
