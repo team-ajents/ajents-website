@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-
 export default function Contact() {
   const [formData, setFormData] = useState({
     name: "",
@@ -10,18 +9,33 @@ export default function Contact() {
     message: "",
   });
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    const mailto = `mailto:team@ajents.de?subject=Anfrage von ${encodeURIComponent(formData.name)} – ${encodeURIComponent(formData.company)}&body=${encodeURIComponent(
-      `Name: ${formData.name}\nUnternehmen: ${formData.company}\nE-Mail: ${formData.email}\n\nNachricht:\n${formData.message}`
-    )}`;
-    window.location.href = mailto;
-    setSubmitted(true);
+    setLoading(true);
+    setError(null);
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+      if (!res.ok) throw new Error();
+      setSubmitted(true);
+    } catch (err) {
+      setError(
+        "Ihre Nachricht konnte leider nicht gesendet werden. Bitte schreiben Sie uns direkt an team@ajents.de"
+      );
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -142,9 +156,17 @@ export default function Contact() {
                   />
                 </div>
 
-                <button type="submit" className="w-full btn-primary text-center">
-                  Anfrage senden
+                <button
+                  type="submit"
+                  disabled={loading}
+                  className="w-full btn-primary text-center disabled:opacity-60 disabled:cursor-not-allowed"
+                >
+                  {loading ? "Wird gesendet …" : "Anfrage senden"}
                 </button>
+
+                {error && (
+                  <p className="text-xs text-red-500 text-center">{error}</p>
+                )}
 
                 <p className="text-xs text-ajents-gray text-center">
                   Kein Newsletter, keine Weitergabe Ihrer Daten. Wir melden uns

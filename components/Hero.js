@@ -21,11 +21,16 @@ export default function Hero() {
 
         {/* CTA */}
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
-          <a href="/#kontakt" className="btn-primary">
-            Erstgespräch anfragen
+          <a
+            href="https://calendly.com/team-ajents"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary"
+          >
+            Termin buchen
           </a>
-          <a href="/#leistungen" className="btn-secondary">
-            Mehr erfahren
+          <a href="/#kontakt" className="btn-secondary">
+            Frage stellen
           </a>
         </div>
 
